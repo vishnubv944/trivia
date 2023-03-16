@@ -9,11 +9,11 @@
 <h1 align="center">Trivia App</h1>
 
   <p align="center">
-    <a href="#">View Demo</a>
+    <a href="https://trivia-vishnubv944.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/vishnubv944/justDoIt/issues">Report Bug</a>
+    <a href="https://github.com/vishnubv944/trivia/issues">Report Bug</a>
     ·
-    <a href="https://github.com/vishnubv944/justDoIt/issues">Request Feature</a>
+    <a href="https://github.com/vishnubv944/trivia/issues">Request Feature</a>
   </p>
 </div>
 
@@ -61,16 +61,16 @@ This is a web application you can easily access a variety of quiz questions on d
 
 Vishnu B V - vishnubv944@gmail.com
 
-Project Link: []()
+Project Link: [https://trivia-vishnubv944.onrender.com/](https://trivia-vishnubv944.onrender.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/vishnubv944/justDoIt.svg?style=for-the-badge
-[contributors-url]: https://github.com/vishnubv944/justDoIt/graphs/contributors
-[forks-url]: https://github.com/vishnubv944/justDoIt/network/members
-[stars-url]: https://github.com/vishnubv944/justDoIt/stargazers
-[issues-url]: https://github.com/vishnubv944/justDoIt/issues
-[license-url]: https://github.com/vishnubv944/justDoIt/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/vishnubv944/trivia.svg?style=for-the-badge
+[contributors-url]: https://github.com/vishnubv944/trivia/graphs/contributors
+[forks-url]: https://github.com/vishnubv944/trivia/network/members
+[stars-url]: https://github.com/vishnubv944/trivia/stargazers
+[issues-url]: https://github.com/vishnubv944/trivia/issues
+[license-url]: https://github.com/vishnubv944/trivia/blob/master/LICENSE.txt
 [linkedin-url]: https://www.linkedin.com/in/vishnubv944/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [product-screenshot-1]: img/1.png
