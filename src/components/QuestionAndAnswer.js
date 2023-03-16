@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function QuestionAndAnswer({ question, answerQuestion }) {
   const options = ["1", "2", "3"];
-  console.log(question);
   const answers = [...question.incorrect_answers, question.correct_answer];
 
   function shuffle(array) {
@@ -30,7 +29,9 @@ function QuestionAndAnswer({ question, answerQuestion }) {
   return (
     <div>
       <div className="question">
-        <h2 dangerouslySetInnerHTML={{ __html: question.question }} />
+        <center>
+          <h2 dangerouslySetInnerHTML={{ __html: question.question }} />
+        </center>
       </div>
       <div className="options">
         {shuffledAnswers.map((answer, index) => (
@@ -39,9 +40,8 @@ function QuestionAndAnswer({ question, answerQuestion }) {
               onClick={() => {
                 answerQuestion(answer);
               }}
-            >
-              {answer}
-            </p>
+              dangerouslySetInnerHTML={{ __html: answer }}
+            />
           </button>
         ))}
       </div>

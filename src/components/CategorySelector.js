@@ -13,9 +13,11 @@ function CategorySelector({ category, chooseCategory, getQuestion }) {
         }}
       >
         {categories.map((category, index) => (
-          <option key={index} value={category.id}>
-            {category.name}
-          </option>
+          <option
+            key={index}
+            value={category.id}
+            dangerouslySetInnerHTML={{ __html: category.name }}
+          />
         ))}
       </select>
     </div>

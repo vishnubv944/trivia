@@ -14,7 +14,8 @@ code {
 }
 
 .container {
-  height: 700px;
+  /* height: 700px; */
+  height: 100%;
   width: 100px;
   margin-top: 5%;
 }
@@ -86,6 +87,8 @@ code {
 
 .question h2 {
   font-weight: 650;
+  display: flex;
+  justify-content: center;
 }
 
 .options {
@@ -126,8 +129,8 @@ code {
   justify-content: end;
   margin-top: 2%;
 }
-.btn {
-  background-color: #c5c5c5;
+.button {
+  background-color: #c5c5c5 !important;
 }
 
 .none {
@@ -199,4 +202,16 @@ code {
 .overlay-container {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .won-card,
+  .lost-card {
+    width: 82% !important;
+    height: 82% !important;
+  }
+
+  .option {
+    height: 90% !important;
+  }
 }

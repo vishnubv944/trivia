@@ -13,7 +13,7 @@ function ResultModal({ isCorrect, getQuestion, question }) {
             <br></br>
             <br></br>
             <div className="next-button">
-              <button className="btn" onClick={getQuestion}>
+              <button className=" btn button" onClick={getQuestion}>
                 Go to Next Question
               </button>
             </div>
@@ -30,11 +30,11 @@ function ResultModal({ isCorrect, getQuestion, question }) {
             <br></br>
             <h4>The Correct Answer is: </h4>
 
-            <h2>{question.correct_answer}</h2>
+            <h2 dangerouslySetInnerHTML={{ __html: question.correct_answer }} />
 
             <br></br>
             <div className="next-button">
-              <button className="btn" onClick={getQuestion}>
+              <button className="btn button" onClick={getQuestion}>
                 Go to Next Question
               </button>
             </div>

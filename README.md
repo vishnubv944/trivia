@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-In the project directory, you can run:
+<h1 align="center">Trivia App</h1>
 
-### `npm start`
+  <p align="center">
+    <a href="#">View Demo</a>
+    ·
+    <a href="https://github.com/vishnubv944/justDoIt/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/vishnubv944/justDoIt/issues">Request Feature</a>
+  </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+[![Product Name Screen Shot][product-screenshot-1]]()
+[![Product Name Screen Shot][product-screenshot-2]]()
+[![Product Name Screen Shot][product-screenshot-3]]()
+[![Product Name Screen Shot][product-screenshot-4]]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a web application you can easily access a variety of quiz questions on different topics from an external API. Our application is designed to fetch the questions and display them in a quiz form, making it easy for users to engage with the content and test their knowledge. Our user-friendly interface and intuitive design make it easy to navigate, so you can focus on learning and having fun.
 
-### `npm run build`
+<!-- GETTING STARTED -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo
+   ```sh
+   git clone https://github.com/vishnubv944/.git
+   ```
+2. Install all modules using the following command from the directory of your app
+   ```sh
+   npm install
+   ```
+3. Run the app using the start command
+   ```sh
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- CONTRIBUTING -->
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- CONTACT -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Vishnu B V - vishnubv944@gmail.com
 
-## Learn More
+Project Link: []()
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- MARKDOWN LINKS & IMAGES -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[contributors-shield]: https://img.shields.io/github/contributors/vishnubv944/justDoIt.svg?style=for-the-badge
+[contributors-url]: https://github.com/vishnubv944/justDoIt/graphs/contributors
+[forks-url]: https://github.com/vishnubv944/justDoIt/network/members
+[stars-url]: https://github.com/vishnubv944/justDoIt/stargazers
+[issues-url]: https://github.com/vishnubv944/justDoIt/issues
+[license-url]: https://github.com/vishnubv944/justDoIt/blob/master/LICENSE.txt
+[linkedin-url]: https://www.linkedin.com/in/vishnubv944/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[product-screenshot-1]: img/1.png
+[product-screenshot-2]: img/2.png
+[product-screenshot-3]: img/3.png
+[product-screenshot-4]: img/4.png

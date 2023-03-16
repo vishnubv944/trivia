@@ -21,14 +21,13 @@ function App() {
   function getQuestion() {
     setIsCorrect(null);
     let url = `https://opentdb.com/api.php?amount=1`;
-    if (selectedCategory != "any") {
+    if (selectedCategory !== "any") {
       url = `https://opentdb.com/api.php?amount=1&category=${selectedCategory}`;
     }
 
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log("Received Data: ", data.results[0]);
         setQuestion(data.results[0]);
       });
   }
@@ -43,7 +42,6 @@ function App() {
     }
   }
 
-  console.log(selectedCategory);
   return (
     <div className="App">
       <div className="container">
@@ -77,7 +75,7 @@ function App() {
         </div>
 
         <div className="next-button">
-          <button onClick={getQuestion} className="btn">
+          <button onClick={getQuestion} className="btn button">
             Go to Next Question
           </button>
         </div>
