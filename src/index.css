@@ -135,7 +135,7 @@ code {
 }
 
 .overlay {
-  display: none;
+  /* display: none; */
   position: fixed; /* Sit on top of the page content */
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
@@ -151,7 +151,7 @@ code {
 .won-card {
   position: absolute;
   display: flex;
-  display: none !important;
+  /* display: none !important; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -168,7 +168,7 @@ code {
 }
 
 .lost-card {
-  display: none !important;
+  /* display: none !important; */
   position: absolute;
   display: flex;
   flex-direction: column;

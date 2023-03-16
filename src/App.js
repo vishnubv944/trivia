@@ -10,12 +10,16 @@ import ScoreBoard from "./components/ScoreBoard";
 function App() {
   const [question, setQuestion] = useState(null);
   const [selectedCategory, setselectedCategory] = useState("any");
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [correctScore, setCorrectScore] = useState(0);
+  const [inCorrectScore, setInCorrectScore] = useState(0);
 
   useEffect(() => {
     getQuestion();
   }, [selectedCategory]);
 
   function getQuestion() {
+    setIsCorrect(null);
     let url = `https://opentdb.com/api.php?amount=1`;
     if (selectedCategory != "any") {
       url = `https://opentdb.com/api.php?amount=1&category=${selectedCategory}`;
@@ -29,9 +33,16 @@ function App() {
       });
   }
 
-  // const handelChange = (e) => {
-  //   console.log(e.target.value);
-  // };
+  function handleQuestionAnswered(answer) {
+    const isAnswerCorrect = answer == question.correct_answer;
+    setIsCorrect(isAnswerCorrect);
+    if (isAnswerCorrect) {
+      setCorrectScore(correctScore + 1);
+    } else {
+      setInCorrectScore(inCorrectScore + 1);
+    }
+  }
+
   console.log(selectedCategory);
   return (
     <div className="App">
@@ -41,18 +52,34 @@ function App() {
             category={selectedCategory}
             chooseCategory={setselectedCategory}
           />
-          <ScoreBoard />
+          <ScoreBoard
+            correctScore={correctScore}
+            inCorrectScore={inCorrectScore}
+          />
         </div>
 
         <div className="content">
-          <ResultModal />
+          {isCorrect != null && (
+            <ResultModal
+              isCorrect={isCorrect}
+              getQuestion={getQuestion}
+              question={question}
+            />
+          )}
+
           {question && (
-            <QuestionAndAnswer question={question} getQuestion={getQuestion} />
+            <QuestionAndAnswer
+              question={question}
+              getQuestion={getQuestion}
+              answerQuestion={handleQuestionAnswered}
+            />
           )}
         </div>
 
         <div className="next-button">
-          <button className="btn">Go to Next Question</button>
+          <button onClick={getQuestion} className="btn">
+            Go to Next Question
+          </button>
         </div>
       </div>
     </div>

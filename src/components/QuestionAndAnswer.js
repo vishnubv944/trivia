@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 
-function QuestionAndAnswer({ question }) {
+function QuestionAndAnswer({ question, answerQuestion }) {
   const options = ["1", "2", "3"];
   console.log(question);
   const answers = [...question.incorrect_answers, question.correct_answer];
@@ -35,7 +35,13 @@ function QuestionAndAnswer({ question }) {
       <div className="options">
         {shuffledAnswers.map((answer, index) => (
           <button key={index} className=" btn option">
-            <p>{answer}</p>
+            <p
+              onClick={() => {
+                answerQuestion(answer);
+              }}
+            >
+              {answer}
+            </p>
           </button>
         ))}
       </div>
