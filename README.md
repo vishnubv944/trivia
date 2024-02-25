@@ -34,7 +34,7 @@ This is a web application you can easily access a variety of quiz questions on d
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/vishnubv944/.git
+   git clone https://github.com/vishnubv944/trivia.git
    ```
 2. Install all modules using the following command from the directory of your app
    ```sh
